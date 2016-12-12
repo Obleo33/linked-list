@@ -2,14 +2,14 @@
 1 verbose cli [ '/Users/franklincrosby/.nvm/versions/node/v6.7.0/bin/node',
 1 verbose cli   '/Users/franklincrosby/.nvm/versions/node/v6.7.0/bin/npm',
 1 verbose cli   'test',
-1 verbose cli   'test/hobbit-test.js' ]
+1 verbose cli   'test/pirate-test.js' ]
 2 info using npm@3.10.3
 3 info using node@v6.7.0
 4 verbose stack Error: ENOENT: no such file or directory, open '/Users/franklincrosby/turing/1_Mod/linked-list/package.json'
 4 verbose stack     at Error (native)
 5 verbose cwd /Users/franklincrosby/turing/1_Mod/linked-list
 6 error Darwin 16.1.0
-7 error argv "/Users/franklincrosby/.nvm/versions/node/v6.7.0/bin/node" "/Users/franklincrosby/.nvm/versions/node/v6.7.0/bin/npm" "test" "test/hobbit-test.js"
+7 error argv "/Users/franklincrosby/.nvm/versions/node/v6.7.0/bin/node" "/Users/franklincrosby/.nvm/versions/node/v6.7.0/bin/npm" "test" "test/pirate-test.js"
 8 error node v6.7.0
 9 error npm  v3.10.3
 10 error path /Users/franklincrosby/turing/1_Mod/linked-list/package.json
