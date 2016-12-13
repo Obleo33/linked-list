@@ -2,19 +2,12 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.container {
+#submit-site {
   background-color: #455864;
-}
-
-#site-list {
-  background-color: #CFD8D6;
-  button: #455864;
-}
-
-.listed-sites {
-  background-color: #FFFFFF;
-  border: 5px;
-  border-color: #607D8B;
+  width: 320px;
+  height: 170px;
+  text-align: center;
+  font-size: 800;
 }
 
 h1 {
@@ -28,6 +21,18 @@ h1 {
 
 #enter:hover {
   background-color: #FFD773;
+}
+
+#site-list {
+  background-color: #CFD8D6;
+}
+
+.listed-sites {
+  background-color: #FFFFFF;
+  border-color: #607D8B;
+  border: 5px;
+  margin: 20px auto;
+  text-align: center;
 }
 
 h2 {
