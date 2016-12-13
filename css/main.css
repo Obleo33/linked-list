@@ -3,22 +3,26 @@ body {
   background-color: #CFD8D6;
 }
 
-h1 {
-  color: #FFFFFF;
-  padding: 10px;
-  font-size: 20px;
-}
-#submit-site {
-  background-color: #455864;
-  /*width: 320px;*/
-  /*height: 200px;*/
-  text-align: center;
-  font-weight: 800;
-  font-size: 25px;
-  /*padding: 5px 5px;*/
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.container input {
+#submit-site {
+  background-color: #455864;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+h1 {
+  color: #FFFFFF;
+  padding: 10px
+}
+
+#submit-site input {
   width: 90%;
   margin-top: 10px;
   margin-bottom: 5px;
@@ -28,10 +32,10 @@ h1 {
 #enter {
   background-color: #FFC107;
   color: #FFFFFF;
-  width: 90%;
   border: none;
-  margin: 15px auto;
-  font-size: 15px;
+  width: 90%;
+  margin: 10px 0px 15px 0px;
+  font-weight: bold;
 }
 
 #enter:hover {
@@ -42,9 +46,8 @@ h1 {
 
 #site-list {
   background-color: #CFD8DC;
-  padding: 10px;
+  width: 90%;
 }
-
 
 .site-card {
   background-color: #FFFFFF;
@@ -56,32 +59,50 @@ h1 {
   font-weight: 400;
 }
 
+
+.site-card h2 {
+  border-bottom: 2px solid;
+  border-color: #CFD8DC;
+  width: 90%;
+  padding: 5px;
+  margin: 10px auto;
+}
+
+
+.site-url{
+  color: #607D8B;
+}
+
 .site-title {
   color: #455864;
-  border-bottom: 2px solid;
-  border-color: #CFD8DC;
-  margin: 10px 10px;
 }
-
-.site-url {
-  color: #607D8B;
-  border-bottom: 2px solid;
-  border-color: #CFD8DC;
-  margin: 10px 10px;
-}
-
 
 .site-card button {
-  margin-left: 10px;
-  margin-bottom: 5px;
-  position: relative;
+  margin: 5px 5px;
   background: none;
   border: none;
   text-decoration: underline;
 }
 
-.read-button {
+.delete-button {
+  float: right;
 }
 
-.delete-button {
+.site-card a:hover, .read-button:hover, .delete-button:hover {
+  color: #455864;
+  border-bottom: 2px solid yellow;
+  font-weight: bold;
+}
+
+.read {
+  background-color: #F2F4F4;
+}
+
+.readButton {
+  color: #F05A28;
+}
+
+.readLink {
+  text-decoration: underline;
+  text-decoration-color: #CFD8DC;
 }
