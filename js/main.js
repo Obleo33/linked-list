@@ -9,21 +9,24 @@ function makeLinkCard (title,url){
       '<div class = "section-break"></div>' +
       '<button class = "read-button">Read</button>' +
       '<button class = "delete-button">Delete</button>' +
-    '</div>'
-  );
-}
+    '</div>');
+};
 
 $('#enter').on('click', function () {
   var $siteTitleValue = $('.site-title-input').val();
   var $siteUrlValue = $('.site-url-input').val();
-  console.log ($siteUrlValue)
   makeLinkCard($siteTitleValue, $siteUrlValue);
 });
 
 $('#site-list').on('click', '.delete-button',removeCard);
 
-
 function removeCard(){
-  console.log("putput");
   $(this).parent().remove();
+};
+
+$('#site-list').on('click', '.read-button',readCard);
+
+function readCard(){
+  $(this).parent().toggleClass('read');
+  console.log("read");
 };
