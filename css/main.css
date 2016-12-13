@@ -3,63 +3,85 @@ body {
   background-color: #CFD8D6;
 }
 
+h1 {
+  color: #FFFFFF;
+  padding: 10px;
+  font-size: 20px;
+}
 #submit-site {
   background-color: #455864;
-  width: 320px;
-  height: 150px;
+  /*width: 320px;*/
+  /*height: 200px;*/
   text-align: center;
   font-weight: 800;
   font-size: 25px;
-  padding: 5px 5px;
+  /*padding: 5px 5px;*/
 }
 
 .container input {
-  width: 270px;
+  width: 90%;
   margin-top: 10px;
   margin-bottom: 5px;
-}
-
-h1 {
-  color: #FFFFFF;
+  font-size: 20px;
 }
 
 #enter {
   background-color: #FFC107;
   color: #FFFFFF;
-  width: 275px;
+  width: 90%;
+  border: none;
+  margin: 15px auto;
+  font-size: 15px;
 }
 
 #enter:hover {
   background-color: #FFD773;
 }
 
+/*Site cards*/
+
 #site-list {
+  background-color: #CFD8DC;
+  padding: 10px;
+}
+
+
+.site-card {
   background-color: #FFFFFF;
-  margin: 10px 5px;
+  width: 100%;
+  margin: 10px auto;
   border: 1px solid;
   border-color: #607D8B;
-  padding: 0px 10px;
+  text-align: left;
+  font-weight: 400;
 }
 
 h2 {
   color: #455864;
-}
-
-#site-list h3 {
-  color: #607D8B;
-  border-top: 2px solid;
   border-bottom: 2px solid;
   border-color: #CFD8DC;
-  margin: 5px auto;
+  margin: 10px 10px;
 }
 
-#read-button {
+.site-card h3 {
+  color: #607D8B;
+  border-bottom: 2px solid;
+  border-color: #CFD8DC;
+  margin: 10px 10px;
+}
+
+
+.site-card button {
   margin-left: 10px;
   margin-bottom: 5px;
+  position: relative;
+  background: none;
+  border: none;
+  text-decoration: underline;
 }
 
-#delete-button {
-  float: right;
-  margin-right: 10px;
-  margin-bottom: 5px;
+.read-button {
+}
+
+.delete-button {
 }
