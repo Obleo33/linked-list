@@ -56,14 +56,14 @@ h1 {
   font-weight: 400;
 }
 
-h2 {
+.site-title {
   color: #455864;
   border-bottom: 2px solid;
   border-color: #CFD8DC;
   margin: 10px 10px;
 }
 
-.site-card h3 {
+.site-url {
   color: #607D8B;
   border-bottom: 2px solid;
   border-color: #CFD8DC;
