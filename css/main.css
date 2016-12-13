@@ -6,14 +6,17 @@ body {
 #submit-site {
   background-color: #455864;
   width: 320px;
-  height: 170px;
+  height: 150px;
   text-align: center;
-  font-size: 800;
+  font-weight: 800;
+  font-size: 25px;
+  padding: 5px 5px;
 }
 
 .container input {
   width: 270px;
-  margin: 5px auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 h1 {
@@ -23,8 +26,7 @@ h1 {
 #enter {
   background-color: #FFC107;
   color: #FFFFFF;
-  width: 280px;
-  margin: 5px auto;
+  width: 275px;
 }
 
 #enter:hover {
@@ -34,9 +36,9 @@ h1 {
 #site-list {
   background-color: #FFFFFF;
   margin: 10px 5px;
-  text-align: left;
   border: 1px solid;
   border-color: #607D8B;
+  padding: 0px 10px;
 }
 
 h2 {
