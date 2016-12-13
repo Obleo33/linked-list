@@ -44,6 +44,10 @@ function validateInput (){
   checkValidUrl();
 }
 
+function alertMsg(msg){
+  $('alert-msg').text();
+}
+
 $('#site-list').on('click', '.delete-button',removeCard);
 
 function removeCard(){
