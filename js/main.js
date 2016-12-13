@@ -4,7 +4,7 @@ function makeLinkCard (title,url){
   $("#site-list").append(
     '<div class = "site-card">' +
       '<h2 class="site-title">'+ title + '</h2>'+
-      '<h3 class = "site-url">'+ url + '</h3>' +
+      '<a class = "site-url" target = "_blank" href = "'+ url +'">'+ url +'</a>' +
       '<button class = "read-button">Read</button>' +
       '<button class = "delete-button">Delete</button>' +
     '</div>');
