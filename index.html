@@ -2,27 +2,32 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Link-list</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <title>Linked List</title>
+    <link rel= "stylesheet" type= "text/css" href="/css/main.css">
+    <link href= "https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
   </head>
+
   <body>
     <section id = "submit-site">
-      <h1>Linked <img src="images/linked-list-logo.svg"> List</h1>
-      <input class = "site-title-input" type="text">
-      <input class "site-url-input" type="text">
-      <button id = "enter" type="button"></button>
-    </section>
-    <section id ="site-list">
-      <div class="listed-sites">
-        <!-- <h2 class = "site-title"></h2>
-        <h3 class = "site-url"></h3>
-        <button class = "read-button" type="button">Read</button>
-        <button class = "delete-button"type="button">Delete</button> -->
+      <div class="container">
+        <h1>Linked<img src="images/linked-list-logo.svg" width= "10px" height= "10px">List</h1>
+        <input class= "site-title-input" type= "text" placeholder= "Website Title">
+        <input class= "site-url-input" type= "text" placeholder= "Website Url">
+        <button id= "enter" type= "button">Enter</button>
       </div>
     </section>
+
+    <section id= "site-list">
+      <div class= "listed-sites">
+        <h2 class= "site-title"></h2>
+        <h3 class= "site-url"></h3>
+        <button id= "read-button" type= "button">Read</button>
+        <button id= "delete-button" type= "button">Delete</button>
+      </div>
+    </section>
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js"><\/script>')</script>
-    <script type="text/javascript" src="js/main.js">
-    </script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

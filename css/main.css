@@ -1,0 +1,42 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  background-color: #455864;
+}
+
+#site-list {
+  background-color: #CFD8D6;
+  button: #455864;
+}
+
+.listed-sites {
+  background-color: #FFFFFF;
+  border: 5px;
+  border-color: #607D8B;
+}
+
+h1 {
+  color: #FFFFFF;
+}
+
+#enter {
+  background-color: #FFC107;
+  color: #FFFFFF;
+}
+
+#enter:hover {
+  background-color: #FFD773;
+}
+
+h2 {
+  color: #455864;
+}
+
+h3 {
+  color: #607D8B;
+  underline: #F2F4F4;
+  border-top: 2px #CFD8DC;
+  border-bottom: 2px #CFD8DC;
+}
