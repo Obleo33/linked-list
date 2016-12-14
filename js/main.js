@@ -47,6 +47,8 @@ $('.site-title-input, .site-url-input').keyup(function(){
   $('#enter').prop('disabled', false);
 });
 
+count();
+
 // Clear inputfunction
 function clearInputs (){
   $('.site-title-input').val("");

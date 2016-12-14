@@ -40,12 +40,12 @@ h1 {
 #enter:hover, #remove-read:hover {
   background-color: #FFD773;
 }
+
 .count-container {
   display: flex;
   justify-content: center
-
-
 }
+
 .count {
   color: #ffffff;
   font-size: 10px;
@@ -54,7 +54,7 @@ h1 {
 
 #alert-msg {
   color: #ffffff;
-  font-size: 15px;
+  font-size: 14px;
   margin-top: 10px;
 }
 
@@ -141,11 +141,11 @@ h1 {
     width: 35px;
     height: 30px;
   }
-  #submit-site input, #enter {
+  #submit-site input, #enter , #remove-read {
     width: 90%;
     margin: 10px auto;
   }
-  #enter {
+  #enter, #remove-read {
     padding: 8px;
   }
   .site-card {
@@ -169,7 +169,7 @@ h1 {
     margin: 15px auto;
     padding: 10px;
   }
-  #enter {
+  #enter, #remove-read {
     padding: 10px;
     width: 80%;
   }
