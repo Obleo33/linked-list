@@ -1,14 +1,13 @@
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #CFD8D6;
-}
-
-.container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+
+/*Site-Input*/
 
 #submit-site {
   background-color: #455864;
@@ -42,7 +41,15 @@ h1 {
   background-color: #FFD773;
 }
 
-/*Site cards*/
+#alert-msg {
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 10px;
+  margin: 10px auto;
+  color: #FFFFFF;
+}
+
+/*Site Cards*/
 
 #site-list {
   background-color: #CFD8DC;
@@ -59,7 +66,6 @@ h1 {
   font-weight: 400;
 }
 
-
 .site-card h2 {
   border-bottom: 2px solid;
   border-color: #CFD8DC;
@@ -68,13 +74,13 @@ h1 {
   margin: 10px auto;
 }
 
-
 .site-url{
   color: #607D8B;
 }
 
 .site-title {
   color: #455864;
+  font-weight: 800;
 }
 
 .site-card button {
@@ -103,6 +109,58 @@ h1 {
 }
 
 .readLink {
-  text-decoration: underline;
-  text-decoration-color: #CFD8DC;
+  border-bottom: 1px solid #CFD8DC;
+}
+
+/*Media Queries*/
+
+@media screen and (min-width: 475px) {
+  #submit-site {
+    width: 100%;
+    font-size: 35px;
+  }
+  .list-img {
+    width: 35px;
+    height: 30px;
+  }
+  #submit-site input, #enter {
+    width: 90%;
+    margin: 10px auto;
+  }
+  #enter {
+    padding: 8px;
+  }
+  .site-card {
+    width: 95%;
+  }
+  .site-card button {
+    margin: 5px 15px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #submit-site {
+    font-size: 45px;
+  }
+  .list-img {
+    width: 40px;
+    height: 35px;
+  }
+  #submit-site input{
+    width: 80%;
+    margin: 15px auto;
+    padding: 10px;
+  }
+  #enter {
+    padding: 10px;
+    width: 80%;
+  }
+  .site-card {
+    margin: 10px auto;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+
 }
