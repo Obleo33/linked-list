@@ -3,9 +3,12 @@
 $('#enter').on('click', function () {
   var $siteTitleValue = $('.site-title-input').val();
   var $siteUrlValue = $('.site-url-input').val();
+  // reset input fields
   clearInputs();
+  // reset alert message
   alertMsg("");
   checkBlank($siteTitleValue, $siteUrlValue);
+  // disable the enter button
   $('#enter').prop("disabled",true);
   count();
 });
@@ -32,6 +35,11 @@ $(".site-title-input, .site-url-input").keydown(function(e){
 function count(){
   sitesNum = $('.site-card').length;
   readNum = $('.read').length;
+  unRead = sitesNum - readNum;
+  console.log(sitesNum+" "+readNum);
+  $('.card-count').text("Bookmarks: " + sitesNum);
+  $('.read-count').text("Read: " + readNum);
+  $('.unread-count').text("Unread: " + unRead);
 }
 
 // Enable enter button on keyup in either input field
@@ -93,7 +101,6 @@ $('#site-list').on('click', '.delete-button',removeCard);
 function removeCard(){
   $(this).parent().remove();
   // $(this.site-card).fadeOut(500,function() { $(this).parent().remove(); });
-  console.log(sitesNum);
   count();
 };
 
