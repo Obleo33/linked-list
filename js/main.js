@@ -44,14 +44,23 @@ function checkBlank (title,url){
   if (title === '' || url === ''){
     alertMsg("You must enter both a title and url")
   } else {
-    makeLinkCard(title,url);
+    checkValidUrl(title,url)
   }
 }
 
-function checkValidUrl(url){
-  urlregex.test(url);
+function checkValidUrl(title,url){
+  if(validateURL(url)===false){
+    alertMsg("You must enter a valid URL beginning with http://")
+  } else {
+    makeLinkCard(title,url);
+  }
 };
 
+function validateURL(url) {
+  var urlregex = new RegExp(
+        "^(http:\/\/www.|https:\/\/www.|ftp:\/\/www.)");
+  return urlregex.test(url);
+}
 
 function alertMsg(msg){
   $('#alert-msg').text(msg);
