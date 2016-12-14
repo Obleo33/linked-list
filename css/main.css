@@ -103,6 +103,11 @@ h1 {
 }
 
 .readLink {
-  text-decoration: underline;
-  text-decoration-color: #CFD8DC;
+  border-bottom: 1px solid green;
+}
+
+@media screen and (min-width:600px) {
+  .container {
+    flex-direction: row;
+  }
 }

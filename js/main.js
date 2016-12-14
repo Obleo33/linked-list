@@ -13,11 +13,18 @@ function makeLinkCard (title,url){
 $('#enter').on('click', function () {
   var $siteTitleValue = $('.site-title-input').val();
   var $siteUrlValue = $('.site-url-input').val();
-
   clearInputs();
+  alertMsg("");
   checkBlank($siteTitleValue, $siteUrlValue);
-  $('#enter').prop("disabled",true);;
+  $('#enter').prop("disabled",true);
+  count();
 });
+
+function count(){
+  sitesNum = $('.site-card').length;
+  readNum = $('.read').length;
+}
+
 
 $('.site-title-input, .site-url-input').keyup(function(){
   $('#enter').prop('disabled', false);
@@ -28,30 +35,40 @@ function clearInputs (){
   $('.site-url-input').val("");
 }
 
-function checkBlank (title,url){
-  if (title === '' || url === ''){
-    console.log("hey")
-  } else {
-    makeLinkCard(title,url);
-  }
-}
-
-  $('.site-title-input').placeholder = "Both fields must be filled out";
-  $('.site-url-input').placeholder = ""
-
 function validateInput (){
   checkBlank();
   checkValidUrl();
 }
 
-function alertMsg(msg){
-  $('alert-msg').text();
+function checkBlank (title,url){
+  if (title === '' || url === ''){
+    alertMsg("You must enter both a title and url")
+  } else {
+    makeLinkCard(title,url);
+  }
 }
+
+function checkValidUrl(url){
+  urlregex.test(url);
+};
+
+
+function alertMsg(msg){
+  $('#alert-msg').text(msg);
+}
+
+$('#remove-read').on('click', function (){
+  $('.read').remove();
+  count();
+})
 
 $('#site-list').on('click', '.delete-button',removeCard);
 
 function removeCard(){
   $(this).parent().remove();
+  // $(this.site-card).fadeOut(500,function() { $(this).parent().remove(); });
+  console.log(sitesNum);
+  count();
 };
 
 $('#site-list').on('click', '.read-button',readCard);
@@ -59,5 +76,6 @@ $('#site-list').on('click', '.read-button',readCard);
 function readCard(){
   $(this).parent().toggleClass('read');
   $(this).toggleClass('readButton');
-  $(this).siblings('a').toggleClass('readLink');
+  $('.site-url').toggleClass('readLink');
+  count();
 };
