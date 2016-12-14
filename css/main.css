@@ -28,7 +28,7 @@ h1 {
   font-size: 20px;
 }
 
-#enter {
+#enter, #remove-read {
   background-color: #FFC107;
   color: #FFFFFF;
   border: none;
@@ -37,8 +37,25 @@ h1 {
   font-weight: bold;
 }
 
-#enter:hover {
+#enter:hover, #remove-read:hover {
   background-color: #FFD773;
+}
+.count-container {
+  display: flex;
+  justify-content: center
+
+
+}
+.count {
+  color: #ffffff;
+  font-size: 10px;
+  width: 90px;
+}
+
+#alert-msg {
+  color: #ffffff;
+  font-size: 15px;
+  margin-top: 10px;
 }
 
 #alert-msg {
@@ -109,6 +126,7 @@ h1 {
 }
 
 .readLink {
+
   border-bottom: 1px solid #CFD8DC;
 }
 
@@ -162,5 +180,6 @@ h1 {
 }
 
 @media screen and (min-width: 900px) {
+
 
 }
