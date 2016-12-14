@@ -20,6 +20,12 @@ $('#enter').on('click', function () {
   count();
 });
 
+$(".site-title-input, .site-url-input").keydown(function(e){
+       if(e.which === 13){
+           $("#enter").click();
+       }
+   });
+
 function count(){
   sitesNum = $('.site-card').length;
   readNum = $('.read').length;
