@@ -29,7 +29,7 @@ h1 {
   font-size: 20px;
 }
 
-#enter {
+#enter, #remove-read {
   background-color: #FFC107;
   color: #FFFFFF;
   border: none;
@@ -38,14 +38,19 @@ h1 {
   font-weight: bold;
 }
 
-#enter:hover {
+#enter:hover, #remove-read:hover {
   background-color: #FFD773;
 }
+.count-container {
+  display: flex;
+  justify-content: center
 
+
+}
 .count {
   color: #ffffff;
   font-size: 10px;
-  display: inline-flex;
+  width: 90px;
 }
 
 #alert-msg {

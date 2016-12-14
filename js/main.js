@@ -37,9 +37,9 @@ function count(){
   readNum = $('.read').length;
   unRead = sitesNum - readNum;
   console.log(sitesNum+" "+readNum);
-  $('.card-count').text("Bookmarks: " + sitesNum);
-  $('.read-count').text("Read: " + readNum);
-  $('.unread-count').text("Unread: " + unRead);
+  $('.card-count').text("Bookmarks:" +"\n" + sitesNum);
+  $('.read-count').text("Read:" +"\n" + readNum);
+  $('.unread-count').text("Unread:" +"\n" + unRead);
 }
 
 // Enable enter button on keyup in either input field
